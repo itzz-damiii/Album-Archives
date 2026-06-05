@@ -1,0 +1,302 @@
+/*HOMEPAGE ALBUM CARDS*/
+/*album cover icons on the homepage */
+.home-page .album-card{
+    width: 270px;
+    height: 270px;
+    border-radius:15px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: transform 1s ease, box-shadow 1s ease, filter 1s ease;
+}
+.home-page .album-card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 3px 120px palevioletred;
+    filter: brightness(0.8);
+   transition: transform 1s ease, box-shadow 1s ease, 
+    opacity 1s ease, background-color 1s ease;
+}
+.home-page .lauryn{
+ background-image: url(album-cover2.png);
+ background-position: center;
+ background-size: cover;
+}
+.home-page .kwn{ 
+    background-position: center;
+    background-size: cover;
+    background-image: url(album-cover.jpg);
+}
+.home-page .kaytranada{
+    background-position: center;
+    background-size: cover;
+    background-image: url(album-cover3.png);
+}
+.home-page .album-card{
+    width: 100px;
+    height: 100px;
+}
+.home-page .albums-icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    padding: 150px;
+}
+/*GLOBAL PAGE SETUP*/
+html{
+    min-height: 100%;
+}
+
+/*GLOBAL TEXT STYLES*/
+h1{
+ font-size: 35px;   
+ font-family: Helvetica, sans-serif;
+ text-align: center;
+ padding: 20px;
+}
+h2{
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+/*KWN PAGE STYLES*/
+/*background, title, album layout, and page-specific styling*/
+
+body.kwn{
+    background-image: url(kwn.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.kwn img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+.kwn .album-layout{
+    display: flex;
+    gap: 600px;
+}
+
+/* KWN SONG CARDS*/
+
+.kwn .song-card{
+    border-radius: 10px;
+    transition: transform 1s ease, box-shadow 1s ease;
+    padding: 15px;
+    background-image: url(kwn.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 170px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.kwn .song-card::before{ 
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    top: 0;
+    left: -80px;
+    background: #844e60;
+    opacity: 0.3;
+    transition: transform 1s ease;
+}
+.kwn .song-card:hover{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-color: #000000;
+    background-image: none;
+    color: white;
+    box-shadow: 0px 3px 100px #844e60;
+    transform: translateY(-8px);
+    transition: transform 1s ease, box-shadow 1s ease, 
+    opacity 1s ease, background-color 1s ease;
+}
+.kwn .song-card h3{
+   display: none;
+}
+.song-card p{
+    display: none;
+}
+
+.kwn .song-card:hover::before {
+    transform: translateX(250px);
+}
+.kwn .song-card:hover h3, .kwn .song-card:hover p{
+    display: flex;
+}
+
+.kwn .tracklist-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.lauryn-page .song-card{
+    border-radius: 10px;
+    transition: transform 1s ease, box-shadow 1s ease;
+    padding: 15px;
+    background-image: url(mshill_logo.webp);
+    background-size: cover;
+    background-position: center;
+    width: 170px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.lauryn-page img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+.lauryn-page .tracklist-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+body.lauryn-page{
+    background-image: url(lauryn-hill.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.lauryn-page .song-card::before{ 
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    top: 0;
+    left: -80px;
+    background: #844e60;
+    opacity: 0.3;
+    transition: transform 1s ease;
+}
+
+.lauryn-page .song-card:hover{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-color: #000000;
+    background-image: none;
+    color: white;
+    box-shadow: 0px 3px 100px #844e60;
+    transform: translateY(-8px);
+    transition: transform 1s ease, box-shadow 1s ease, 
+    opacity 1s ease, background-color 1s ease;
+}
+.lauryn-page .song-card h3 {
+    display: none;
+}
+
+.lauryn-page .song-card p {
+    display: none;
+}
+.lauryn-page .song-card:hover h3,
+.lauryn-page .song-card:hover p {
+    display: flex;
+}
+.lauryn-page .song-card:hover::before {
+    transform: translateX(250px);
+}
+
+.kaytranada-page .song-card{
+    border-radius: 10px;
+    transition: transform 1s ease, box-shadow 1s ease;
+    padding: 15px;
+    background-image: url(mshill_logo.webp);
+    background-size: cover;
+    background-position: center;
+    width: 170px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.kaytranada-page img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+.kaytranada-page .tracklist-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+body.kaytranada-page{
+    background-image: url(lauryn-hill.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.kaytranada-page .song-card::before{ 
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    top: 0;
+    left: -80px;
+    background: #844e60;
+    opacity: 0.3;
+    transition: transform 1s ease;
+}
+
+.kaytranada-page .song-card:hover{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-color: #000000;
+    background-image: none;
+    color: white;
+    box-shadow: 0px 3px 100px #844e60;
+    transform: translateY(-8px);
+    transition: transform 1s ease, box-shadow 1s ease, 
+    opacity 1s ease, background-color 1s ease;
+}
+.kaytranada-page .song-card h3 {
+    display: none;
+}
+
+.kaytranada-page .song-card p {
+    display: none;
+}
+.kaytranada-page .song-card:hover h3,
+.kaytranada-page .song-card:hover p {
+    display: flex;
+}
+.kaytranada-page .song-card:hover::before {
+    transform: translateX(250px);
+}
