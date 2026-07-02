@@ -12,7 +12,7 @@
 .home-page .album-card:hover{
     transform: translateY(-20px);
     box-shadow: 0px 3px 120px palevioletred;
-    filter: brightness(0.8);
+    filter: brightness(0.4);
    transition: transform 1s ease, box-shadow 1s ease, 
     opacity 1s ease, background-color 1s ease;
 }
@@ -31,16 +31,21 @@
     background-size: cover;
     background-image: url(album-cover3.png);
 }
-.home-page .album-card{
-    width: 100px;
-    height: 100px;
-}
 .home-page .albums-icons{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 150px;
     padding: 150px;
+}
+.home-page .album-card:hover h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    color: white;
+    font-family: Helvetica, sans-serif;
 }
 /*GLOBAL PAGE SETUP*/
 html{
