@@ -230,6 +230,8 @@ body.lauryn-page{
     transform: translateX(250px);
 }
 
+/*KAYTRANADA PAGE STYLES*/
+
 .kaytranada-page .song-card{
     border-radius: 10px;
     transition: transform 1s ease, box-shadow 1s ease;
@@ -266,6 +268,18 @@ body.kaytranada-page{
     padding: 0;
     width: 100%;
     min-height: 100vh;
+}
+.kaytranada-page .song-card{
+    border-radius: 10px;
+    transition: transform 1s ease, box-shadow 1s ease;
+    padding: 15px;
+    background-image: url(kaytranada-icon.webp);
+    background-size: cover;
+    background-position: center;
+    width: 170px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
 }
 
 .kaytranada-page .song-card::before{ 
@@ -304,4 +318,15 @@ body.kaytranada-page{
 }
 .kaytranada-page .song-card:hover::before {
     transform: translateX(250px);
+}
+body.kaytranada-page{
+    background-image: url(Kaytranada-page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
 }
