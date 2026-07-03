@@ -180,7 +180,6 @@ body.kwn{
     border-radius: 10px;
 }
 body.lauryn-page{
-    background-image: url(lauryn-hill.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -235,7 +234,6 @@ body.lauryn-page{
     border-radius: 10px;
     transition: transform 1s ease, box-shadow 1s ease;
     padding: 15px;
-    background-image: url(mshill_logo.webp);
     background-size: cover;
     background-position: center;
     width: 170px;
