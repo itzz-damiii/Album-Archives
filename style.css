@@ -180,6 +180,13 @@ body.kwn{
     border-radius: 10px;
 }
 body.lauryn-page{
+    background-image: url(lauryn-hill.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
+}
+body.lauryn-page{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -248,17 +255,6 @@ body.lauryn-page{
     margin-right: auto;
     border: 4px solid black;
     border-radius: 10px;
-}
-body.kaytranada-page{
-    background-image: url(lauryn-hill.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(15px);
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100vh;
 }
 .kaytranada-page .song-card{
     border-radius: 10px;
