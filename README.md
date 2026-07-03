@@ -10,6 +10,11 @@ Each album page contains:
   - A tracklist
   - Personal reflection explaining why the album resonated with me.
 
+## How to Use
+
+Open the homepage and click on any album cover to navigate to its page. Each page has a tracklist 
+where songs are revealed when you hover on the icons to the right of the album reflections.
+
 ## Screenshots
 
 ### Homepage
