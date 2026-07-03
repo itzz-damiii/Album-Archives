@@ -69,7 +69,16 @@ h3{
     font-family: Helvetica, sans-serif;
     
 }
-
+.album-layout{
+    display: flex;
+    gap: 50px;
+}
+.tracklist-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 /*KWN PAGE STYLES*/
 /*background, title, album layout, and page-specific styling*/
 
@@ -91,11 +100,6 @@ body.kwn{
     margin-right: auto;
     border: 4px solid black;
     border-radius: 10px;
-}
-
-.kwn .album-layout{
-    display: flex;
-    gap: 600px;
 }
 
 /* KWN SONG CARDS*/
@@ -148,12 +152,6 @@ body.kwn{
     display: flex;
 }
 
-.kwn .tracklist-container{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
 .lauryn-page .song-card{
     border-radius: 10px;
     transition: transform 1s ease, box-shadow 1s ease;
@@ -173,12 +171,6 @@ body.kwn{
     margin-right: auto;
     border: 4px solid black;
     border-radius: 10px;
-}
-.lauryn-page .tracklist-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
 }
 body.lauryn-page{
     background-image: url(lauryn-hill.gif);
@@ -251,12 +243,6 @@ body.lauryn-page{
     margin-right: auto;
     border: 4px solid black;
     border-radius: 10px;
-}
-.kaytranada-page .tracklist-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
 }
 body.kaytranada-page{
     background-image: url(lauryn-hill.gif);
