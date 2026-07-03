@@ -1,4 +1,4 @@
-# Estibby's Album Archives  
+# Estibby's Album Archives    
 
 My personal archive for the albums I've had on repeat. Built to introduce me to, and help me practice HTML, CSS, and Github.
 
