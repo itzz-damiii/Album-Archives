@@ -79,6 +79,13 @@ h3{
     flex-wrap: wrap;
     gap: 30px;
 }
+/*REFLECTION BOX STYLES*/
+.album-reflection{
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
 /*KWN PAGE STYLES*/
 /*background, title, album layout, and page-specific styling*/
 
